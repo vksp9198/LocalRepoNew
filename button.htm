@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button effect</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center ;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg,#0f2027,#203a43,#2c5364);
+        }
+        .glowBtn{
+            font-size: 1.5rem;
+            color: #fff;
+            padding: 15px 30px;
+            margin: 10px;
+            border: 2px solid #0ff;
+            border-radius: 50px ; 
+            background: transparent;
+            cursor: pointer;
+            transform: 0.3s ease-in-out ;
+            position: relative ;
+            overflow: hidden;
+        }
+        .glowBtn::before{
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba
+            (255,255,255,0.3),rgba(0,255,255,0)70%);
+            transition: 0.4S;
+            transform: scale(0);
+
+        }
+    .glowBtn:hover::before{
+        transform: scale(1);
+    }
+
+        .glowBtn:hover{
+            color: #000;
+            background: #0ff;
+            box-shadow: 0 0 15px #0ff, 0 0 60px #0ff ,0 0 120px #0ff;
+        }
+        .glowBtn:active{
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <button class="glowBtn"> button 1</button>
+     <button class="glowBtn"> button 2</button>
+      <button class="glowBtn"> button 3</button>
+   
+</body>
+</html>
