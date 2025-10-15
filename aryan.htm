@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Restaurant Menu</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style type="text/css" media="all">
+*{
+padding: 0;
+margin: 0;
+font-family: 'Times New Roman', Times, serif;
+color: #211C84;
+}
+body{
+background: url(img3.jpg);
+background-size: cover;
+background-position: left;
+text-align: center;
+}
+h1{
+padding: 10px;
+font-size: 70px;
+}
+h2{
+padding: 20px;
+}
+.box{
+border-right: 2px solid #BD953E;
+border-left: 2px solid #BD953E;
+border-radius: 20px;
+height: 350px;
+width:300px;
+padding: 5px;
+margin: 20px;
+background-color: rgba(255, 252, 254, 0.27);
+backdrop-filter: blur(6px);
+}
+.menucard ol{
+margin: 0px;
+padding: 20px;
+}
+.menucard ul{
+padding: 30px;
+}
+.menucard{
+padding: 30px;
+display: flex;
+}
+.menutable{
+display: flex;
+justify-content:center;
+align-items:center;
+}
+th{
+background-color:;
+}
+
+table,th,td{
+border-color: #BD953E;
+width:80%;
+padding: 20px;
+margin: 10px;
+border-collapse: collapse;
+/*background-color: #FFF7F3;*/
+background-color: rgba(255,255,255,0.027);
+backdrop-filter: blur(4px);
+}
+hr{
+margin:30px 300px 30px 300px;
+}
+.in{
+color: limegreen;
+}
+.out{
+color: red;
+}
+img{
+border-radius:50%;
+}
+#dishname{
+text-align: left;
+}
+</style>
+</head>
+<body>
+<h1>Restaurant Name</h1>
+<div class="heading">
+<h2><i class="fa-solid fa-utensils"></i> Today's Special <i class="fa-solid fa-utensils"></i></h2>
+</div>
+<div class="menucard">
+<div class="box">
+<ul type="none">
+<li><i class="fa-regular fa-star"></i> Starters <i class="fa-regular fa-star"></i>
+<ol>
+<li>Paneer Tikka.</li>
+<li>Hara Bhara Kabab.</li>
+<li>Chilli Paneer.</li>
+</ol>
+</li>
+</ul>
+<div class="box2">
+<img src="starters.jpg" alt="" height="130px"/>
+</div>
+</div>
+<div class="box">
+<ul type="none">
+<li><i class="fa-regular fa-star"></i> Main Cource <i class="fa-regular fa-star"></i>
+<ol>
+<li>Paneer Butter Masala/Paneer Makhani.</li>
+<li>Dal Makhani.</li>
+<li>Malai Kofta.</li>
+</ol>
+</li>
+</ul>
+<div class="box2">
+<img src="maincourse.jpg" alt="" height="130px"/>
+</div>
+</div>
+<div class="box">
+<ul type="none">
+<li><i class="fa-regular fa-star"></i> Desserts <i class="fa-regular fa-star"></i>
+<ol>
+<li>Gulab Jamun.</li>
+<li>Rasgulla.</li>
+<li>Rasmalai.</li>
+</ol>
+</li>
+</ul>
+<div class="box2">
+<img src="desserts.jpg" alt="" height="130px"/>
+</div>
+</div>
+</div>
+<div>
+<h2><i class="fa-solid fa-certificate"></i> Starters <i class="fa-solid fa-certificate"></i></h2>
+</div>
+<div class="menutable">
+<table border="1">
+<tr>
+<th>Dish Names</th>
+<th>Prices (₹)</th>
+<th >Availability</th>
+</tr>
+<tr>
+<td id="dishname">Paneer Tikka <mark>(Chef's Special).</td>
+<td>180</td>
+<td class="in">Available</td>
+</tr>
+<tr>
+<td id="dishname">Hara Bhara Kabab.</td>
+<td>130</td>
+<td class="in">Available</td>
+</tr>
+<tr>
+<td id="dishname">Chilli Paneer <mark>(Chef's Special).</td>
+<td>180</td>
+<td class="in">Available</td>
+</tr>
+<tr>
+<td id="dishname">Gobhi Manchurian.</td>
+<td>120</td>
+<td class="in">Available</td>
+</tr>
+<tr>
+<td id="dishname">Tandoori Gobhi.</td>
+<td>130</td>
+<td class="out">Out Of Stock</td>
+</tr>
+</table>
+</div>
+<div>
+<h2><i class="fa-solid fa-certificate"></i> Main Course <i class="fa-solid fa-certificate"></i></h2>
+</div>
+<div class="menutable">
+<table border="1">
+<tr>
+<th>Dish Names</th>
+<th>Prices (₹)</th>
+<th>Availability</th>
+</tr>
+<tr>
+<td id="dishname">Shahi Paneer <mark>(Chef's Spacial).</mark></td>
+<td>350</td>
+<td class="in">Available</td>
+</tr>
+<tr>
+<td id="dishname">Paneer Butter Masala/Paneer Makhani.</td>
+<td>270</td>
+<td class="in">Available</td>
+</tr>
+<tr>
+<td id="dishname">Palak Paneer</td>
+<td>250</td>
+<td class="out">Out Of Stock</td>
+</tr>
+<tr>
+<td id="dishname">Dal Tadka/Dal Makhani.</td>
+<td>260</td>
+<td class="in">Available</td>
+</tr>
+<tr>
+<td id="dishname">Malai Kofta <mark>(Chef's Special).</mark></td>
+<td>250</td>
+<td class="in">Available</td>
+</tr>
+<tr>
+<td id="dishname">Rajma Chawal.</td>
+<td>120</td>
+<td class="out">Out Of Stock</td>
+</tr>
+<tr>
+<td id="dishname">Bhindi Masala.</td>
+<td>120</td>
+<td class="out">Out Of Stock</td>
+</tr>
+</table>
+</div>
+<h2> <i class="fa-solid fa-certificate"></i> Desserts <i class="fa-solid fa-certificate"></i></h2>
+<div>
+</div>
+<div class="menutable">
+<table border="1">
+<tr>
+<th>Dish Names</th>
+<th>Prices (₹)</th>
+<th>Availability</th>
+</tr>
+<tr>
+<td id="dishname">Gulab Jamun</td>
+<td>70</td>
+<td class="in">Available</td>
+</tr>
+<tr>
+<td id="dishname">Rasgulla</td>
+<td>130</td>
+<td class="out">Out Of Stock</td>
+</tr>
+<tr>
+<td id="dishname">Rasmalai</td>
+<td>120</td>
+<td class="in">Available</td>
+</tr>
+<tr>
+<td id="dishname">Kheer</td>
+<td>120</td>
+<td class="out">Out Of Stock</td>
+</tr>
+<tr>
+<td id="dishname">Kulfi</td>
+<td>60</td>
+<td class="in">Available</td>
+</tr>
+<tr>
+<td id="dishname">Falooda</td>
+<td>180</td>
+<td class="in">Available</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
